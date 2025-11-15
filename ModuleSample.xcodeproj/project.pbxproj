@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3D80F3F32EC8790A00354E75 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3D80F3F22EC8790A00354E75 /* MyLibrary */; };
+		3D80F3F62EC87DFD00354E75 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3D80F3F52EC87DFD00354E75 /* MyLibrary */; };
+		3D80F3F92EC87E3D00354E75 /* MyLibrary2 in Frameworks */ = {isa = PBXBuildFile; productRef = 3D80F3F82EC87E3D00354E75 /* MyLibrary2 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3D80F3C32EC870F600354E75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +35,22 @@
 		3D80F3CC2EC870F600354E75 /* ModuleSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D80F3E02EC8719000354E75 /* Exceptions for "ModuleSample" folder in "ModuleSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MyLibrary,
+			);
+			target = 3D80F3B42EC870F400354E75 /* ModuleSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3D80F3B72EC870F400354E75 /* ModuleSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D80F3E02EC8719000354E75 /* Exceptions for "ModuleSample" folder in "ModuleSample" target */,
+			);
 			path = ModuleSample;
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D80F3F62EC87DFD00354E75 /* MyLibrary in Frameworks */,
+				3D80F3F92EC87E3D00354E75 /* MyLibrary2 in Frameworks */,
+				3D80F3F32EC8790A00354E75 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +134,9 @@
 			);
 			name = ModuleSample;
 			packageProductDependencies = (
+				3D80F3F22EC8790A00354E75 /* MyLibrary */,
+				3D80F3F52EC87DFD00354E75 /* MyLibrary */,
+				3D80F3F82EC87E3D00354E75 /* MyLibrary2 */,
 			);
 			productName = ModuleSample;
 			productReference = 3D80F3B52EC870F400354E75 /* ModuleSample.app */;
@@ -195,6 +220,10 @@
 			);
 			mainGroup = 3D80F3AC2EC870F400354E75;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3D80F3F12EC8790A00354E75 /* XCLocalSwiftPackageReference "ModuleSample/MyLibrary" */,
+				3D80F3F72EC87E3D00354E75 /* XCLocalSwiftPackageReference "ModuleSample/MyLibrary2" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3D80F3B62EC870F400354E75 /* Products */;
 			projectDirPath = "";
@@ -550,6 +579,32 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3D80F3F12EC8790A00354E75 /* XCLocalSwiftPackageReference "ModuleSample/MyLibrary" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModuleSample/MyLibrary;
+		};
+		3D80F3F72EC87E3D00354E75 /* XCLocalSwiftPackageReference "ModuleSample/MyLibrary2" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModuleSample/MyLibrary2;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D80F3F22EC8790A00354E75 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+		3D80F3F52EC87DFD00354E75 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+		3D80F3F82EC87E3D00354E75 /* MyLibrary2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D80F3AD2EC870F400354E75 /* Project object */;
 }

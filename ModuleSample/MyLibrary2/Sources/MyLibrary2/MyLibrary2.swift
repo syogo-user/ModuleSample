@@ -1,10 +1,10 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
-public class MyLibrary {
+public class MyLibrary2 {
     public init() {}
     
-    public func hello() -> String {
-        return "Hello world 😈"
+    public func hello2() -> String {
+        return "Hello world 😻"
     }
 }

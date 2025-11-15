@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import MyLibrary
+import MyLibrary2
 
 struct ContentView: View {
+    let library = MyLibrary()
+    let library2 = MyLibrary2()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(library2.hello2())
         }
         .padding()
     }
